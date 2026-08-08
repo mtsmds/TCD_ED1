@@ -42,33 +42,6 @@ typedef struct pi{
 
 }*Pilha;
 
-
-
-// fila estatica - notificacoes
-#define MAX 10 // maximo de notificacoes
-#define MSG 100 // tamanho da msg
-
-typedef struct {
-    char mensagens[MAX][MSG];
-    int inicio;
-    int fim;
-    int total; // contador de elementos
-} FilaNotificacoes;
-
-void inicializar_fila_notif(FilaNotificacoes *f);
-
-int fila_notif_vazia(FilaNotificacoes *f);
-
-int fila_notif_cheia(FilaNotificacoes *f);
-
-int enfileirar_notif(FilaNotificacoes *f, const char *msg);
-
-
-int desenfileirar_notif(FilaNotificacoes *f, char *saida);
-
-void exibir_notif(FilaNotificacoes *f);
-
-
 void exibir_feed(Lista lst);
 
 int inserir(Lista *lst, Lista *circular, char *titulo,  int *status, int *nota, Fila X);
@@ -118,6 +91,7 @@ int remover_fila(Fila *fla);
 
 void exibir_fila(Fila fla);
 
+//pilha
 
 void desempilhar( Pilha *p, Lista *lst, Lista *feed, Fila *fla);
 
