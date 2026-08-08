@@ -1,3 +1,6 @@
+
+
+Bibliotecas utilizadas: string.h, stdlib.h, stdio.h
 Sistema de Gerenciamento de Livros
 
 
