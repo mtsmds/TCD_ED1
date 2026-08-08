@@ -10,6 +10,7 @@ mingw32-make
 Para remover os arquivos gerados pela compilação:
 
 make clean
+
 //Execução
 
 Após a compilação, execute o programa com:
